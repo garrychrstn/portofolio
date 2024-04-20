@@ -1,30 +1,43 @@
-body {
-  background: #f3f2fe;
-}
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+* {
+  padding: 0;
+  margin: 0;  
+  font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-* { margin: 0; padding: 0; }
-
-.navbar {
-  /* display: flex; 
-  justify-content: space-around;
-  align-items: center; */
+  font-style: normal;
+  list-style: none;
 }
 
-.navbar h1 {
-  font-size: 70px;
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 80px;
 }
-
-.navbar  {}
+.navbar li {
+  margin-left: 70px;
+}
+.hero { 
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+.hero .description { 
+  flex: 2;
+  text-align: left;
+}
+.hero .description h1 {
+  margin: 15px 0px 15px 0px;
+}
+.hero h1 {
+  flex: 1;
+}
+.past {
+  width: 70%;
+  margin: auto;
+}
+.past .project-container {
+  display: flex;
+  text-align: left;
+}
+.past .project-container > * {
+  padding: 10px;
+}
